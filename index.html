@@ -120,9 +120,14 @@
 					</div>
 				</div>
 			</div>
-			<div id="addSection" class="section">
+			<div id="addSection" class="section"> 
 				<div class="sub_cont yemen">
-					<div class="txt_wrap"> 섹션 1 텍스트 </div>
+					<div class="txt_wrap"> 
+						<div class="txt_box">섹션 1 텍스트 </div>
+						<div class="txt_box">섹션 2 텍스트 </div>
+						<div class="txt_box">섹션 3 텍스트 </div>
+						<div class="txt_box">섹션 4 텍스트 </div>
+					</div>
 					<div class="img_wrap">
 						<div></div>
 						<div></div>
@@ -130,7 +135,6 @@
 					</div>
 				</div>
 				<div class="sub_cont burkina_faso">
-					<div class="txt_wrap"> 섹션 2 텍스트 </div>
 					<div class="img_wrap">
 						<div></div>
 						<div></div>
@@ -138,7 +142,6 @@
 					</div>
 				</div>
 				<div class="sub_cont ukraine">
-					<div class="txt_wrap"> 섹션 3 텍스트 </div>
 					<div class="img_wrap">
 						<div></div>
 						<div></div>
@@ -146,7 +149,6 @@
 					</div>
 				</div>
 				<div class="sub_cont haiti">
-					<div class="txt_wrap"> 섹션 4 텍스트 </div>
 					<div class="img_wrap">
 						<div></div>
 						<div></div>
@@ -465,6 +467,7 @@
 			subSection2 = $(".burkina_faso"),
 			subSection3 = $(".ukraine"),
 			subSection4 = $(".haiti");
+		const sectionTxt = subCont.find(".txt_box");
 
 		const subImgHeight1 = subSection1.find(".img_wrap").outerHeight(),
 			subImgHeight2 = subSection2.find(".img_wrap").outerHeight(),
@@ -472,7 +475,7 @@
 			subImgHeight4 = subSection4.find(".img_wrap").outerHeight();
 
 		let myFullpage = new fullpage('#fullpage', {
-			anchors: ['main', 'video', 'warehouse', 'principles', 'effect', 'story1', 'story2', 'campaign', 'footer'],
+			anchors: ['main', 'video', 'principles', 'effect', 'story1', 'story2', 'campaign', 'footer'],
 			scrollOverflow: true,
 			onScrollOverflow: function (section, slide, position, direction) {
 				let params = {
@@ -484,20 +487,21 @@
 				// console.log("--- onScrollOverflow ---");
 				// console.log(params);
 				console.log(params.position);
-				// subCont.removeClass("active");
-				/* if (params.position < subImgHeight1) {
+				sectionTxt.css("display","none");
+				sectionTxt.eq(0).css("display","block");
+				if (params.position < subImgHeight1) {
 					console.log("section1");
-					subSection1.addClass("active");
+					console.log(sectionTxt.eq(0).css("display","block"));
 				} else if (params.position < subImgHeight1 + subImgHeight1) {
 					console.log("section2");
-					subSection2.addClass("active");
+					console.log(sectionTxt.eq(1).css("display","block"));
 				} else if (params.position < subImgHeight1 + subImgHeight1 + subImgHeight2) {
 					console.log("section3");
-					subSection3.addClass("active");
+					console.log(sectionTxt.eq(2).css("display","block"));
 				} else if (params.position < subImgHeight1 + subImgHeight1 + subImgHeight2 + subImgHeight3) {
 					console.log("section4");
-					subSection4.addClass("active");
-				} */
+					console.log(sectionTxt.eq(3).css("display","block"));
+				}
 			}
 		});
 	</script>

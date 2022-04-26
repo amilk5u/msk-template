@@ -930,10 +930,6 @@ header .top_btn span:after { width:2px; height:15px; top:22px; left:37px; backgr
 	#fullpage .section#campaigns .con8 .campaigns_slide { height:63%; padding:8% 0 0; }
 }
 
-
-
-
-
 /* 섹션 추가 */
 #fullpage .section#addSection  { width: 100%; height: 100vh; padding:120px 0 0; box-sizing: border-box; }
 #fullpage .section#addSection.fp-table  { display: block; }
@@ -942,11 +938,17 @@ header .top_btn span:after { width:2px; height:15px; top:22px; left:37px; backgr
 
 #fullpage .section#addSection .sub_cont  { 
 	width: 100%; position: relative; border: 10px solid black; box-sizing: border-box; 
-
 }
 #fullpage .section#addSection .txt_wrap {	
-	float:left;	width:500px; height:80vh; background-color: pink;	font-size: 70px; font-weight: 600;		
+	float:left;	font-size: 70px; font-weight: 600;		
+	position: relative;
 }
+#fullpage .section#addSection .txt_wrap .txt_box {
+	width:100px; height:200px; background-color: red;
+	position: fixed;
+	display: none;
+}
+#fullpage .section#addSection .txt_wrap .txt_box:first-of-type { display: block; }
 #fullpage .section#addSection .img_wrap {	
 	width: 50%; float:right;
 }

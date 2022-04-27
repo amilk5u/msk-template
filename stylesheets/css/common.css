@@ -160,7 +160,7 @@ header nav ul#myMenu li.half a:after { width:100%; background-color:#f70707; }
 header nav ul#myMenu li a { display:block; padding:0 0 10px; font-size:17px; font-weight:500; position:relative; color:#3d3e3f; letter-spacing:-1px; overflow:hidden; }
 header nav ul#myMenu li a:after { width:0; height:2px; content:""; display:block; position:absolute; bottom:0; z-index:-1; background-color:transparent; -webkit-transition:all 0.4s ease; -moz-transition:all 0.4s ease; -o-transition:all 0.4s ease; -ms-transition:all 0.4s ease; }
 header .donate_btn { padding:37px 0 0; float:right; }
-header .top_btn { width:78px; height:78px; position:fixed; bottom:30px; right:50px; border:1px solid #eceeef; border-radius:80px; background-color:#fff; box-shadow:0 12px 20px rgba(0, 0, 0, 0.18); padding:20px 0 0; display:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+header .top_btn  { width: 78px; height: 78px; position: fixed; bottom: 30px; right: 50px; border: 1px solid #eceeef; border-radius: 80px; background-color: #fff; box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18); padding: 20px 0 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 header .top_btn:hover span:before { top:20px; }
 header .top_btn:hover span:after { height:17px; top:20px; }
 header .top_btn span { padding:27px 27px 0; display:inline-block; font-weight:600; font-size:12px; letter-spacing:0; }
@@ -472,9 +472,9 @@ header .top_btn span:after { width:2px; height:15px; top:22px; left:37px; backgr
 #fullpage .section#videoInfo .con2 .video_wrap .video_box iframe { width:100%; height:100%; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box { width:620px; height:100%; float:right; padding:92px 0 0 0; position:relative; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box h2 { padding:18px 0 0; font-size:37px; }
-#fullpage .section#videoInfo .con2 .video_wrap .txt_box p { width:500px; font-size:15px; font-weight:400; padding:4% 0 0; letter-spacing:-.5px; line-height:24px; color:#3d3e3f; }
+#fullpage .section#videoInfo .con2 .video_wrap .txt_box p { font-size:15px; font-weight:400; padding:4% 0 0; letter-spacing:-.5px; line-height:29px; color:#3d3e3f; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box p span { color:#000; }
-#fullpage .section#videoInfo .con2 .video_wrap .txt_box .btn_wrap { padding:35px 0 0; }
+#fullpage .section#videoInfo .con2 .video_wrap .txt_box .btn_wrap { padding:13px 0 0; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box .btn_wrap:after { content:""; display:block; clear:both; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box .donate_btn { float:left; }
 #fullpage .section#videoInfo .con2 .video_wrap .txt_box .donate_btn:nth-of-type(2) { padding:0 0 0 15px; }
@@ -930,33 +930,45 @@ header .top_btn span:after { width:2px; height:15px; top:22px; left:37px; backgr
 	#fullpage .section#campaigns .con8 .campaigns_slide { height:63%; padding:8% 0 0; }
 }
 
-/* 섹션 추가 */
-#fullpage .section#addSection  { width: 100%; height: 100vh; padding:120px 0 0; box-sizing: border-box; }
-#fullpage .section#addSection.fp-table  { display: block; }
-#fullpage .section#addSection .sub_cont:after  { content: ""; display: block; clear: both; }
-#fullpage .section#addSection .sub_cont.active .txt_wrap  { position: fixed; left: 0; }
 
-#fullpage .section#addSection .sub_cont  { 
-	width: 100%; position: relative; border: 10px solid black; box-sizing: border-box; 
-}
-#fullpage .section#addSection .txt_wrap {	
-	float:left;	font-size: 70px; font-weight: 600;		
-	position: relative;
-}
-#fullpage .section#addSection .txt_wrap .txt_box {
-	width:100px; height:200px; background-color: red;
-	position: fixed;
-	display: none;
-}
-#fullpage .section#addSection .txt_wrap .txt_box:first-of-type { display: block; }
-#fullpage .section#addSection .img_wrap {	
-	width: 50%; float:right;
-}
-#fullpage .section#addSection .img_wrap > div  { 
-	width: 100%; height: 100vh; background-color: skyblue; 
-	border:1px solid blue;
-	box-sizing: border-box;
-}
+
+.guide_line:before, .guide_line:after {width:1px; height:100vh; display:block; content:""; position:fixed; background-color:red; opacity:.4; left:50%; z-index:1000;}
+.guide_line:before {margin:0 0 0 -680px;}
+.guide_line:after {	margin:0 0 0 680px;}
+.guide_center {width:1px; height:100vh; display:block; content:""; position:fixed; background-color:red; opacity:.4; left:50%; z-index:1000;}
+
+
+/* 섹션 추가 */
+#fullpage .section#addSection { width: 100%; height: 100vh; padding:120px 0 0; box-sizing: border-box; }
+#fullpage .section#addSection.fp-table { display: block; }
+#fullpage .section#addSection .sub_cont { width: 100%; position: relative; box-sizing: border-box; overflow: hidden; border:4px solid black; }
+#fullpage .section#addSection .txt_wrap { position: relative; padding:0 40px; z-index: 1; top:70px; width:1360px; margin:0 auto; }
+#fullpage .section#addSection .txt_wrap .desc {	width:fit-content; position: fixed; display:none; height:700px; opacity: 0; }
+#fullpage .section#addSection .txt_wrap .desc:first-of-type { display: block; opacity: 1; }
+#fullpage .section#addSection .img_wrap { width: 100%; }
+#fullpage .section#addSection .img_wrap > div { width: 100%; height: calc(100vh - 120px); box-sizing: border-box; }
+#fullpage .section#addSection .img_wrap > div img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 내용 */
+#fullpage .section#addSection .txt_wrap .desc .top_cont .catchphrase  { font-size: 16px; font-weight: 400; color: #656970; letter-spacing: -.5px; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title { padding:30px 0 0; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title:after { content: ""; display: block; clear: both; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title > img { float: left; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title > div { float: left; padding:0 0 0 30px; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title > div strong { font-size: 60px; color: #212326; font-weight: 600; display: block; }
+#fullpage .section#addSection .txt_wrap .desc .top_cont .main_title > div span { color: #a9acb1; font-size: 18px; letter-spacing: 0px; display: block; padding: 10px 0 0 2px; font-weight: 500; }
+#fullpage .section#addSection .txt_wrap .desc .substance { padding:55px 0 0; }
+#fullpage .section#addSection .txt_wrap .desc .substance .under_txt { 	padding: 0 0 10px; color: #212326; font-weight: 400; font-size: 18px; line-height: 28px; text-decoration: underline; transform: skew(-7deg); 	letter-spacing: 0;}#fullpage .section#addSection .txt_wrap .desc .substance .cont_elm  { padding: 30px 0 0; }
+#fullpage .section#addSection .txt_wrap .desc .substance .cont_elm span  { font-size: 19px; color: #ed3c3c; font-weight: 500; position: relative; transform: skew(-7deg); display: block; letter-spacing: -.5px; }
+#fullpage .section#addSection .txt_wrap .desc .substance .cont_elm span::before  { content: ""; display: block; width: 3px; height: 80%; background-color: #ed3c3c; position: absolute; left: -13px; top: 50%; transform: translate(0,-50%) skew(-5deg); }
+#fullpage .section#addSection .txt_wrap .desc .substance .cont_elm p  { padding: 20px 0 0; color: #656970; font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: -.1px; }
+#fullpage .section#addSection .txt_wrap .desc .substance .cont_elm p em { padding: 10px 0 0; display: block; font-size: 14px; color: #36393e; font-weight: 400; }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator { padding: 60px 0 0 2px; position: absolute; bottom:0; }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator:after  { content: ""; display: block; clear: both; }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator > span  { width: 24px; float: left; margin: 0 10px 0 0; position: relative; }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator > span.on::after { background-color: transparent; }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator > span::after  { width: 100%; height: 100%; content: ""; display: block; position: absolute; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.7); }
+#fullpage .section#addSection .txt_wrap .desc .flag_indicator > span img { width:100%; }
 
 
 
@@ -1415,12 +1427,7 @@ Not supports in Firefox and IE */
     border-radius: 16px;
     border: 4px solid transparent;
 }
-.fp-warning,
-.fp-watermark{
-    z-index: 9999999;
-    position: absolute;
-    bottom: 0;
-}
+.fp-warning,.fp-watermark  { display: none; }
 .fp-warning,
 .fp-watermark a{
     text-decoration: none;
@@ -1434,8 +1441,3 @@ Not supports in Firefox and IE */
     border-radius: 3px;
     margin: 12px;
 }
-
-.box h1 {
-	font-size: 100px;
-}
-

@@ -169,4 +169,17 @@ function main() {
             clickable: true,
         }
     });
+    var swiper_country = new Swiper('.swiper-container.country_cont', {
+        slidesPerView: "auto",
+        speed: $speed,
+        // loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+    });
 }

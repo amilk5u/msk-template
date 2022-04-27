@@ -14,11 +14,11 @@
 	<meta property="og:title" content="국경없는의사회 | 우크라이나 긴급구호">
 	<meta property="og:description" content="우리는 지금 현장에 있습니다">
 	<meta property="og:image" content="https://msf.or.kr/campaigns/ukraine_2022/images/common/og_banner.jpg">
-	<link rel="shortcut icon" href="https://msf.or.kr/sites/default/files/favicon.png" type="image/png"/>
+	<link rel="shortcut icon" href="https://msf.or.kr/sites/default/files/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="./stylesheets/css/common.css">
 	<script src="./javascripts/jquery-1.8.2.min.js"></script>
 	<!--후원하기 클릭시 utm물고 가는 코드-->
-	<script>
+	<!-- <script>
 		$(function(){
 			var locationUrl= window.location.href;
 			$(".donate_utm_link").each(function(){
@@ -51,10 +51,10 @@
 			})
 		});
 		function URLParser(u) {var path = "", query = "", hash = "", params;if (u.indexOf("#") > 0) {hash = u.substr(u.indexOf("#") + 1);u = u.substr(0, u.indexOf("#"));}if (u.indexOf("?") > 0) {path = u.substr(0, u.indexOf("?"));query = u.substr(u.indexOf("?") + 1);params = query.split('&');} else path = u;return {getHost: function () {var hostexp = /\/\/([\w.-]*)/;var match = hostexp.exec(path);if (match != null && match.length > 1) return match[1];return "";}, getPath: function () {var pathexp = /\/\/[\w.-]*(?:\/([^?]*))/;var match = pathexp.exec(path);if (match != null && match.length > 1) return match[1];return "";}, getHash: function () {return hash;}, getParams: function () {return params}, getQuery: function () {return query;}, setHash: function (value) {if (query.length > 0) query = "?" + query;if (value.length > 0) query = query + "#" + value;return path + query;}, setParam: function (name, value) {if (!params) {params = new Array();}params.push(name + '=' + value);for (var i = 0; i < params.length; i++) {if (query.length > 0) query += "&";query += params[i];}if (query.length > 0) query = "?" + query;if (hash.length > 0) query = query + "#" + hash;return path + query;}, getParam: function (name) {if (params) {for (var i = 0; i < params.length; i++) {var pair = params[i].split('=');if (decodeURIComponent(pair[0]) == name) return decodeURIComponent(pair[1]);}}/* console.log('Query variable %s not found', name);*/}, hasParam: function (name) {if (params) {for (var i = 0; i < params.length; i++) {var pair = params[i].split('=');if (decodeURIComponent(pair[0]) == name) return true;}}/* console.log('Query variable %s not found', name);*/}, removeParam: function (name) {query = "";if (params) {var newparams = new Array();for (var i = 0; i < params.length; i++) {var pair = params[i].split('=');if (decodeURIComponent(pair[0]) != name) newparams.push(params[i]);}params = newparams;for (var i = 0; i < params.length; i++) {if (query.length > 0) query += "&";query += params[i];}}if (query.length > 0) query = "?" + query;if (hash.length > 0) query = query + "#" + hash;return path + query;},}};
-	</script>
+	</script> -->
 	<!--//후원하기 클릭시 utm물고 가는 코드-->
 	<!-- Google Tag Manager -->
-	<script>
+	<!-- <script>
 		(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({
@@ -68,10 +68,10 @@
 				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 			f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-PCTTRC7');
-	</script>
+	</script> -->
 	<!-- End Google Tag Manager -->
 	<!-- Hotjar Tracking Code for msf.or.kr -->
-	<script>
+	<!-- <script>
 		(function (h, o, t, j, a, r) {
 			h.hj = h.hj || function () {
 				(h.hj.q = h.hj.q || []).push(arguments)
@@ -83,593 +83,474 @@
 			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 			a.appendChild(r);
 		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-	</script>
+	</script> -->
 	<!-- Hotjar Tracking Code for msf.or.kr -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
+	<!-- Google Tag Manager (noscript) -->
+	<!-- <noscript>
 	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCTTRC7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="wrap">
-	<!--header-->
-	<header>
-		<h1 id="logo">
-			<a href="https://www.msf.or.kr" target="_blank">
-				<img src="images/common/logo_b.png" alt="국경없는의사회 로고">
-			</a>
-		</h1>
-		<div class="donate_btn">
-			<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
-		</div>
-	</header>
-
-	<!--main-->
-	<div id="wrap">
-		<article id="main" class="dataHash">
-			<div class="swiper-container visual_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="images/main/visual_01.jpg" alt="창문 밖에 어깨가 처진 활동가의 모습">
-					</div>
-					<div class="swiper-slide">
-						<img src="images/main/visual_02.jpg" alt="추운 겨울 따듯한 옷을 전달해 준 사람들">
-					</div>
-					<div class="swiper-slide">
-						<img src="images/main/visual_03.jpg" alt="폐허가 된 집을 바라보는 사람">
-					</div>
-					<div class="swiper-slide">
-						<img src="images/main/visual_04.jpg" alt="사람들을 구하기 위하여 달려온 국경없는의사회">
-					</div>
-					<div class="swiper-slide">
-						<img src="images/main/visual_05.jpg" alt="집을 잃은 사람들을 위한 보금자리">
-					</div>
-				</div>
-				<div class="txt_box">
-					<strong>우크라이나 긴급구호 <span>:</span></strong><br>
-					<strong>우리는 지금 현장에 있습니다</strong>
-				</div>
-				<!--indicator-->
-				<div class="swiper-pagination custom_pagination"></div>
+</noscript> -->
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="wrap">
+		<!--header-->
+		<header>
+			<h1 id="logo">
+				<a href="https://www.msf.or.kr" target="_blank">
+					<img src="images/common/logo_b.png" alt="국경없는의사회 로고">
+				</a>
+			</h1>
+			<div class="donate_btn">
+				<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
 			</div>
-			<!--<div class="donate_box">
-				<ul class="list_block type_1">
-					&lt;!&ndash;   bg size widht  80px &ndash;&gt;
-					<li>
-						<a href="#">
-							<p>환자의 체온 확인과 질병<br>감염여부를 진단하는</p>
-							<h4>체온계</h4>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<p>구호현장에서 2일간<br>환자 치료에 필요한</p>
-							<h4>의사파견</h4>
-						</a>
-					</li>
-				</ul>
-				<ul class="list_block type_2">
-					<li>
-						<a href="#">
-							<p>긴급상황에서 40명의<br>환자 치료가 가능한</p>
-							<h4>긴급구호키트</h4>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<p>위급한 생명을 살리는<br>수술이 가능한</p>
-							<h4>수술키트</h4>
-						</a>
-					</li>
-				</ul>
-			</div>-->
-		</article>
-		<div class="donate_btn fix_btn">
-			<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" class="donate_utm_link">지금 후원하기</a>
-		</div>
-		<article id="video" class="dataHash">
-			<div class="txt_box">
-				<div class="underline">
-					<strong>국경없는의사회는 지금</strong>
-				</div>
-				<h3>우크라이나에 남아 있습니다</h3>
-			</div>
-			<div class="bg_box"></div>
-			<div class="video_box">
-				<iframe src="https://www.youtube.com/embed/3VkUG5SzNbA?rel=0"></iframe>
-			</div>
-			<div class="txt_box">
-            <p>
-			   우크라이나에서 수십만 명의 사람들이 공포에 질린 채 <br>
-			   피난을 떠나거나 발이 묶여 있습니다. 국경없는의사회 팀은 <br>
-			   시시각각 급변하는 정세에 맞춰 환자를 위한 치료가 지속될 수 <br>
-			   있도록 할 수 있는 모든 것을 할 것입니다.
-            </p>
-				<div class="btn_wrap">
-					<div class="donate_btn">
-						<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
-					</div>
-					<div class="donate_btn">
-						<a href="https://msf.or.kr/search/contents?search_api_views_fulltext=%EC%9A%B0%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%82%98&op=%EA%B2%80%EC%83%89%ED%95%98%EA%B8%B0" target="_blank" title="더 알아보기">더 알아보기</a>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article id="medicalSupport1" class="support_wrap support1 dataHash">
-			<div class="txt_box">
-				<div class="underline">
-					<strong>우리는 위기지역 환자를 위한</strong>
-				</div>
-				<h3>의료지원에 집중하고 있습니다</h3>
-			</div>
-			<div class="img_box">
-				<img src="./images/main/sec2_3.gif" alt="">
-			</div>
-			<div class="txt_wrap">
-				<p>
-					8년간의 위기를 겪은 우크라이나에서 이미 진행해온 <br>
-					HIV, 결핵 등 몇몇 활동 프로그램을 일시적으로 중단하는<br>
-					어려운 결정을 내리기도 했습니다.
-				</p>
-				<p>
-					그럼에도 불구하고 급변하는 상황에 맞춰 활동을 조정할<br>
-					방법을 찾고 있으며, 우크라이나 마리우폴(Mariupol)에서<br>
-					부상자 응급치료 키트를 배포하고, 동부의 <br>
-					외과의사 30명을 대상으로 외상 치료를 위한 <br>
-					원격의료 교육을 제공했습니다.
-				</p>
-            <p>
-               외과의를 비롯한 의료인력과 물자를 신속히 우크라이나  <br>
-               안으로 들여보내 진행 중인 현장 활동 인력을 지원하고 <br>
-               운영이 진행되도록 최선을 다하고 있습니다.
-            </p>
-			</div>
-		</article>
-		<article id="medicalSupport2" class="support_wrap support2 dataHash">
-			<div class="txt_box">
-				<div class="underline">
-					<strong>국경없는의사회는</strong>
-				</div>
-				<h3>긴급상황에 신속하게 대응합니다</h3>
-			</div>
-         <div class="img_box">
-				<img src="./images/main/sec2_4.gif" alt="">
-			</div>
-			<div class="txt_wrap">
-				<p>
-					세계 곳곳의 구호 활동가 네트워크와 물류 창고 운영으로 <br>
-					국경없는의사회는 급박한 상황에서도 신속하게<br>
-					환자를 치료하고, 체계적으로 대응할 수 있습니다.
-				</p>
-				<p>
-					특히 긴급 상황이 발생했을 때 즉시 대응 활동에<br>
-					착수할 수 있는 것은 ‘비지정 후원금’이 있어 가능한 일입니다.<br>
-					가장 도움이 시급한 곳에 시간 지체 없이 구호 자원을 마련하고 <br>
-					활동할 수 있도록 국경없는의사회에 힘을 보내주세요.
-
-				</p>
-			</div>
-		</article>
-		<article id="warehouse" class="dataHash">
-			<div class="control_box">
-				<div class="title_box">
-					<span>생명을 살리는 </span>
-					<strong>구호창고</strong>
-				</div>
-				<div class="btn_box">
-					<button type="button" class="prev_btn item_btn">이전 버튼</button>
-					<button type="button" class="next_btn item_btn">다음 버튼</button>
-					<!--<div class="index_box "><span class="counter">1</span> / <span class="length">7</span></div>-->
-					<div class="index_box item-pagination"></div>
-				</div>
-			</div>
-			<div class="swiper-container item_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=4" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_04.jpg" alt="긴급 구호 키트"/>
-								<h4>긴급 구호 키트</h4>
-								<div><span>90,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=15" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_15.jpg" alt="응급 의료 키트"/>
-								<h4>응급 의료 키트</h4>
-								<div><span>1,000,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=28" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/therapist_28.png" alt="외과의사"/>
-								<h4>외과의사</h4>
-								<div><span>120,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=52" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_52.jpg" alt="원격 의료 키트"/>
-								<h4>원격 의료 키트</h4>
-								<div><span>360,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=29" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_29.jpg" alt="탈출 가방"/>
-								<h4>탈출 가방</h4>
-								<div><span>50,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=27" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_13.jpg" alt="텐트 병원"/>
-								<h4>텐트 병원</h4>
-								<div><span>1,400,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=49" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_49.jpg" alt="들것"/>
-								<h4>들것</h4>
-								<div><span>63,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=47" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_47.jpg" alt="식수 위생 키트"/>
-								<h4>식수 위생 키트</h4>
-								<div><span>49,500</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=1" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_01.jpg" alt="가족용 텐트"/>
-								<h4>가족용 텐트</h4>
-								<div><span>30,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=5" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_05.jpg" alt="담요"/>
-								<h4>담요</h4>
-								<div><span>16,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=31" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/therapist_31.png" alt="정신건강 전문가"/>
-								<h4>정신건강 전문가</h4>
-								<div><span>120,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=37" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/therapist_37.png" alt="로지스티션"/>
-								<h4>로지스티션</h4>
-								<div><span>120,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=65" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_65.jpg" alt="가족 돌봄 키트"/>
-								<h4>가족 돌봄 키트</h4>
-								<div><span>170,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=34" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_34.jpg" alt="SUV 차량"/>
-								<h4>SUV 차량</h4>
-								<div><span>260,000</span>원</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="https://warehouse.msf.or.kr/work/work_view.php?product_seq=25" target="_blank">
-							<div class="item_info">
-								<img src="./../images/warehouse/product_25.jpg" alt="수술 키트"/>
-								<h4>수술 키트</h4>
-								<div><span>65,000</span>원</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article id="principles" class="dataHash">
-			<div class="title_box">
-				<div class="underline">
-					<strong>국경없는의사회는 모든 활동에 있어</strong>
-				</div>
-				<h3>우리의 원칙을 지켜왔습니다</h3>
-			</div>
-			<ul class="rule_box">
-				<li>
-					<h5>독립성</h5>
-					<p>
-						운영비 97%는<br>
-						민간기부금으로 마련되어<br>
-						특정 집단 이익과 관계없이<br>
-						활동할 수 있습니다.
-					</p>
-				</li>
-				<li>
-					<h5>중립성</h5>
-					<p>
-						어느 한편에 서지않고,<br>
-						인종, 종교, 정치적 성향에<br>
-						관계없이 오직 의료적<br>
-						필요에 따라 활동합니다.
-					</p>
-				</li>
-				<li>
-					<h5>책무성</h5>
-					<p>
-						의무의 책임을 다하고자<br>
-						모금활동, 행정 운영 비용을<br>
-						사용된 후원금 80% 이상 <br>
-						구호활동에 활용됩니다.
-					</p>
-				</li>
-				<li>
-					<h5>의료윤리</h5>
-					<p>
-						의료 윤리 규범을 준수하며,<br>
-						특히 의료활동 중 개인이나<br>
-						집단에 해를 가하지 않을<br>
-						의무를 다하고 있습니다.
-					</p>
-				</li>
-			</ul>
-		</article>
-		<article id="effect" class="dataHash">
-			<div class="title_box">
-				<div class="underline">
-					<strong>국경없는의사회 후원효과</strong>
-				</div>
-				<h3>생명을 살리는 일에는<br>국경이 없습니다</h3>
-			</div>
-			<ul>
-				<li>
-					<div class="underline">
-						<strong>활동국가</strong>
-					</div>
-					<div class="counter_box">
-						<em class="counter1">88</em> <strong>개국</strong>
-					</div>
-					<p>세계 곳곳, 가장 긴박한 위험에<br>처한 지역에서 활동합니다.</p>
-				</li>
-				<li>
-					<div class="underline">
-						<strong>구호활동가 수</strong>
-					</div>
-					<div class="counter_box">
-						<em class="counter2">41,172</em> <strong>명</strong>
-					</div>
-					<p>구호 현장으로 구호활동가를 파견하고<br>직접 환자들을 치료합니다.</p>
-				</li>
-				<li>
-					<div class="underline">
-						<strong>외래환자 진료</strong>
-					</div>
-					<div class="counter_box">
-						<em class="counter3">9,904,200</em> <strong>회</strong>
-					</div>
-					<p>1년간 후원자들과 함께<br>수많은 환자들의 삶에 변화를 만들었습니다.</p>
-				</li>
-				<p class="figure">
-					<em>2020</em>년 전체 기준
-				</p>
-			</ul>
-		</article>
-		<article id="story1" class="dataHash">
-			<div class="title_box">
-				<div class="underline">
-					<strong>우리의 수 많은 의료 활동은</strong>
-				</div>
-				<h3>전 세계 630만 명의 후원자가<br>있었기에 가능했습니다</h3>
-			</div>
-			<div class="swiper-container activist_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide list_1">
-						<div class="txt_box">
-							<div class="underline">
-								<strong>정형외과의 이재헌</strong>
-							</div>
-							<p>수술한 환자가 쩔룩쩔룩 걸어오면서<br>저한테 고맙다고 인사할 때는<br>정말 감동이었죠</p>
-						</div>
-					</div>
-					<div class="swiper-slide list_2">
-						<div class="txt_box">
-							<div class="underline">
-								<strong>간호사 박지혜</strong>
-							</div>
-							<p>악조건 속에서도 무사히 회복한<br>고마운 아이들이 기억나면서,<br>제가 간호사인 것이 행복했습니다</p>
-						</div>
-					</div>
-					<div class="swiper-slide list_3">
-						<div class="txt_box">
-							<div class="underline">
-								<strong>산부인과의 정의</strong>
-							</div>
-							<p>환자가 살아서 돌아갈 때마다<br>‘내가 여기 오길 정말 잘했구나’<br>하고 보람을 느낍니다</p>
-						</div>
-					</div>
-					<div class="swiper-slide list_4">
-						<div class="txt_box">
-							<div class="underline">
-								<strong>마취과의 이효민</strong>
-							</div>
-							<p>‘그 때 선생님이 살린 아기입니다,<br>이제 건강해져서 오늘 퇴원합니다’<br>라고 말하는데 정말 기쁘더군요</p>
-						</div>
-					</div>
-				</div>
-				<!--indicator-->
-				<div class="swiper-pagination"></div>
-			</div>
-		</article>
-		<article id="story2" class="dataHash">
-			<div class="bg_box"></div>
-			<div class="txt_box">
-				<div class="underline">
-					<strong>오늘, 당신의 마음을</strong><br>
-				</div>
-				<br>
-				<div class="underline">
-					<strong>나누어 주세요</strong><br>
-				</div>
-				<p>
-					국경없는의사회는 오늘도 후원자 여러분의 지원으로 <br>
-					위기로 모든 것을 잃고 치료가 시급한 환자들을 <br>
-					신속하게 지원할 수 있습니다. 환자들의 삶에 <br>
-					소중한 변화를 일으키는 데 힘이 되도록 함께해주세요.
-				</p>
-				<p>
-					후원해 주신 금액은 전 세계 80여 개국의 도움이 필요한 <br>
-					환자들과 긴급구호 활동을 위해 사용됩니다.
-				</p>
-				<div class="donate_btn">
-					<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
-				</div>
-			</div>
-		</article>
-		<article id="campaign" class="dataHash">
-			<div class="txt_box">
-				<div class="underline">
-					<strong>후원 캠페인</strong>
-				</div>
-				<h3>국경없는의사회의 활동을<br>움직이는 것은 바로 여러분입니다</h3>
-			</div>
-			<div class="campaigns_swiper_bg">
-				<div class="swiper-container campaigns_swiper">
+		</header>
+		<!--main-->
+		<div id="wrap">
+			<article id="main" class="dataHash">
+				<div class="swiper-container visual_swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/cyclone_2022/" target="_blank" title="사이클론 긴급구호">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img19.jpg" alt="사이클론 긴급구호">
-									</div>
-								</div>
-								<h4>사이클론 긴급구호</h4>
-							</a>
+							<img src="images/main/visual_01.jpg" alt="창문 밖에 어깨가 처진 활동가의 모습">
 						</div>
 						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/weruntoday_yongjoon/" target="_blank" title="WE RUN TODAY – 최용준 활동가">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img18.jpg" alt="WE RUN TODAY – 최용준 활동가">
-									</div>
-								</div>
-								<h4>WE RUN TODAY –<br>최용준 활동가</h4>
-							</a>
+							<img src="images/main/visual_02.jpg" alt="추운 겨울 따듯한 옷을 전달해 준 사람들">
 						</div>
 						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/philippines_typhoon_2022/" target="_blank" title="필리핀 : 태풍 라이 긴급구호">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img17.jpg" alt="필리핀 : 태풍 라이 긴급구호">
-									</div>
-								</div>
-								<h4>필리핀 : 태풍 라이 긴급구호</h4>
-							</a>
+							<img src="images/main/visual_03.jpg" alt="폐허가 된 집을 바라보는 사람">
 						</div>
-						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/weruntoday_jimin/" target="_blank" title="WE RUN TODAY – 김지민 활동가">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img16.jpg" alt="WE RUN TODAY ">
-									</div>
-								</div>
-								<h4>WE RUN TODAY –<br>김지민 활동가</h4>
+					</div>
+					<div class="txt_box">
+						<strong>WE RUN TODAY<span>:</span></strong><br>
+						<strong>오늘도 환자들이 있는 곳으로 </strong> <br>
+						<strong> 달려갑니다 </strong>
+					</div>
+					<!--indicator-->
+					<div class="swiper-pagination custom_pagination"></div>
+				</div>
+				<!-- <div class="donate_box">
+					<ul class="list_block type_1">
+						<li>
+							<a href="#">
+								<p>환자의 체온 확인과 질병<br>감염여부를 진단하는</p>
+								<h4>체온계</h4>
 							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>구호현장에서 2일간<br>환자 치료에 필요한</p>
+								<h4>의사파견</h4>
+							</a>
+						</li>
+					</ul>
+					<ul class="list_block type_2">
+						<li>
+							<a href="#">
+								<p>긴급상황에서 40명의<br>환자 치료가 가능한</p>
+								<h4>긴급구호키트</h4>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>위급한 생명을 살리는<br>수술이 가능한</p>
+								<h4>수술키트</h4>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+			</article>
+			<div class="donate_btn fix_btn">
+				<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" class="donate_utm_link">지금 후원하기</a>
+			</div>
+			<article id="video" class="dataHash">
+				<div class="txt_box">
+					<div class="underline">
+						<strong>국경없는의사회는 오늘도</strong>
+					</div>
+					<h3>분쟁지역 환자를 치료합니다</h3>
+				</div>
+				<div class="bg_box"></div>
+				<div class="video_box">
+					<iframe src="https://www.youtube.com/embed/1-YN8zHDZAs?rel=0"></iframe>
+				</div>
+				<div class="txt_box">
+					<p> 전쟁은 물리적인 부상 뿐만 아니라 보이지 않는 상처와 고통 또한 야기합니다. <br> 그리고 제일 먼저 한 국가의 의료시스템을 마비시킵니다. <br> 우리는 분쟁지역에서 어느 한쪽 편에 서지 않습니다. <br> 오로지 의료적 필요를 바탕으로 의료 서비스를 제공하며, <br> 도움이 가장 절실한 사람들을 지원하고자 활동합니다. </p>
+					<div class="btn_wrap">
+						<div class="donate_btn">
+							<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
 						</div>
-						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/watsan_jihun/" target="_blank" title="구호현장에서 들려주는 식수위생 프로젝트 ">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img15.jpg" alt="구호현장에서 들려주는 식수위생 프로젝트 ">
+					</div>
+				</div>
+			</article>
+			<article id="addSection" class="dataHash">
+				<div class="swiper-container country_cont">
+					<div class="swiper-wrapper country_wrap">
+						<div class="swiper-slide country_slide yemen">
+							<div class="img_wrap">
+								<div class="loling_img">
+									<img src="./images/main/sec1_img_01.jpg" alt="sec1_img_01">
+									<img src="./images/main/sec1_img_02.jpg" alt="sec1_img_02">
+									<img src="./images/main/sec1_img_03.jpg" alt="sec1_img_03">
+								</div>
+								<div class="title_txt">
+									<p>7년 넘게 이어져온 내전으로 민간인의 고통이 멈추지 않는,</p>
+									<div>
+										<img src="./images/main/flag_btn01.jpg" alt="국기">
+										<strong>예멘</strong>
+										<span>Republic of Yemen</span>
 									</div>
 								</div>
-								<h4>구호현장에서 들려주는 식수위생 프로젝트 </h4>
-							</a>
+							</div>
+							<div class="txt_wrap">
+								<div class="cont_elm">
+									<span>예멘 현장 책임자의 증언</span>
+									<p> “사우디 동맹군은 학교, 병원, 시장, 결혼식장, 수용소 등 민간 시설을 가리지 않고 결코 정당화할 수 없는 공습을 여러 번 자행해 왔습니다. 동맹군은 전쟁 발발 이후 예멘에 무차별적이고 끔찍한 공격을 수없이 많이 가했는데, 국경없는의사회 병원이 공격을 당한 경우도 있었습니다. 근래에 예멘 전역에서 무력충돌이 거세지고 있습니다. 예멘 내전은 벌써 7년 넘게 이어졌는데 예멘인들의 고통이 멈출 기미가 보이지 않습니다.” <em>아흐메드 마하트(Ahmed Mahat) / 국경없는의사회 예멘 현장 책임자</em>
+									</p>
+								</div>
+								<div class="cont_elm">
+									<span>필수 의료서비스 제공 </span>
+									<p>전쟁은 제일 먼저 한 국가의 의료시스템을 마비시키는데, 이러한 환경으로 인해 아동이나 임산부, 고령자, 만성질환자와 같이 가장 취약한 인구가 가장 극심한 영향을 받게 됩니다. 예멘 알-카나위스 국경없는의사회 병원에서는 모자 의료서비스를 무상으로 제공하며, 긴 전쟁 속 신생아가 생명을 잃지 않도록 양질의 산전관리를 제공합니다. </p>
+								</div>
+							</div>
 						</div>
-						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/heritage_3/" target="_blank" title="더 많은 환자를 살리기 위한 우리의 여정 ">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img14.jpg" alt="더 많은 환자를 살리기 위한 우리의 여정 ">
+						<div class="swiper-slide country_slide burkina_faso">
+							<div class="img_wrap">
+								<div class="loling_img">
+									<img src="./images/main/sec2_img_01.jpg" alt="sec1_img_01">
+									<img src="./images/main/sec2_img_02.jpg" alt="sec1_img_02">
+									<img src="./images/main/sec2_img_03.jpg" alt="sec1_img_03">
+								</div>
+								<div class="title_txt">
+									<p>백만 명 넘는 인구가 강제로 피난을 가는</p>
+									<div>
+										<img src="./images/main/flag_btn02.jpg" alt="국기">
+										<strong>부르키나파소</strong>
+										<span>Burkina Faso</span>
 									</div>
 								</div>
-								<h4>더 많은 환자를 살리기 위한 우리의 여정 </h4>
-							</a>
+							</div>
+							<div>
+								<div class="txt_wrap">
+									<div class="cont_elm">
+										<span>살라마타(Salamata)의 이야기</span>
+										<p> “어느 날 아침, 사람들이 허둥지둥 마을을 떠나고 있었어요. <br> 우리도 아이들을 데리고 무작정 뛰기 시작했죠. <br> 신발도 신지 않은 채였지만 마을에서 35km 떨어진 곳까지 쉬지 않고 갔어요. 피난민 캠프에 도착해서 고향의 친척들이 전부 죽고 우리가 살던 집도 무너졌다는 소식을 들었어요. 고향으로 다시는 돌아가지 못할 수도 있어요.” <em>살라마타 / 부르키나파소 국내 실향민</em>
+										</p>
+									</div>
+									<div class="cont_elm">
+										<span>식량 및 식수 부족 대응</span>
+										<p> 농촌 지역사회에서는 피난 가는 것이 수확할 식량과 가축마저 잃는다는 것을 의미합니다. 부르키나파소에는 농업이나 목축업으로 생계를 유지하는 이들이 많아 식량 확보가 가장 큰 문제입니다. 국경없는의사회는 식량을 보급하고 영양실조 아동을 치료하는 데 집중하고 있습니다. </p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/afghanistan_2021/" target="_blank" title="아프가니스탄 의료지원 ">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img13.jpg" alt="아프가니스탄 의료지원 ">
+						<div class="swiper-slide country_slide ukraine">
+							<div class="img_wrap">
+								<div class="loling_img">
+									<img src="./images/main/sec3_img_01.jpg" alt="sec1_img_01">
+									<img src="./images/main/sec3_img_02.jpg" alt="sec1_img_02">
+									<img src="./images/main/sec3_img_03.jpg" alt="sec1_img_03">
+								</div>
+								<div class="title_txt">
+									<p>410만 여명의 피란민이 인근 국가로 몰리고 있는</p>
+									<div>
+										<img src="./images/main/flag_btn03.jpg" alt="국기">
+										<strong>우크라이나</strong>
+										<span>Ukraine</span>
 									</div>
 								</div>
-								<h4>아프가니스탄 의료지원 </h4>
-							</a>
+							</div>
+							<div>
+								<div class="txt_wrap">
+									<div class="cont_elm">
+										<span>조앤 리우(Joanne Liu)의 증언 </span>
+										<p> “기억나는 환자는 폭발물로 인해 안면 부상을 입고 오른쪽 눈을 잃은 여성이었습니다. 환부 사진을 보내 달라고 요청했는데 이 여성은 사진 대신 자신의 부상을 입기 전 사진을 보내왔고, 다음 날 병원에 방문해 이 여성은 이렇게 말했습니다. ‘저는 남편과 자식을 위해서라도 다시 예뻐지고 싶어요.’ 저는 고작 몇 개의 이야기만 전했지만 이 이야기는 지금 수천 명이 겪고 있는 실화입니다. ” 국경없는의사회의 전 국제회장·현 우크라이나 의료대응팀의 소아과 <em>전문의 조앤 리우(Joanne Liu)</em>
+										</p>
+									</div>
+									<div class="cont_elm">
+										<span>의료 대피용 전용 기차 운영</span>
+										<p>두 칸에 의료 장비를 갖춘 이 기차는 국경없는의사회와 우크라이나 철도청이 공동 개발했습니다. 이송 환자 9명은 중증이지만 기차 이동이 가능할 만큼 안정되어 우크라이나 남동부에 위치한 자포리자(Zaporizhzhia)에서 서부 르비우(Lviv)의 여러 병원으로 전원했으며, 9명의 국경없는의사회 의료진이 함께했습니다. 추후 더 대대적이고 체계적인 환자 이송을 위해 더욱 고도화된 의료장비를 갖춘 기차를 개조 중입니다. </p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="swiper-slide">
-							<a href="https://msf.or.kr/campaigns/50th/" target="_blank" title="국경없는의사회가 달려온 50년 ">
-								<div class="img_box">
-									<div class="img">
-										<img src="./../images/main/campaigns_img12.jpg" alt="국경없는의사회가 달려온 50년 ">
+						<div class="swiper-slide country_slide haiti">
+							<div class="img_wrap">
+								<div class="loling_img">
+									<img src="./images/main/sec4_img_01.jpg" alt="sec1_img_01">
+									<img src="./images/main/sec4_img_02.jpg" alt="sec1_img_02">
+									<img src="./images/main/sec4_img_03.jpg" alt="sec1_img_03">
+								</div>
+								<div class="title_txt">
+									<p>2018년 하반기부터 정치경제적 위기로 폭력이 만연한</p>
+									<div>
+										<img src="./images/main/flag_btn04.jpg" alt="국기">
+										<strong>아이티</strong>
+										<span>Republic of Haiti</span>
 									</div>
 								</div>
-								<h4>국경없는의사회가 달려온 50년 </h4>
-							</a>
+							</div>
+							<div>
+								<div class="txt_wrap">
+									<div class="cont_elm">
+										<span>마리 조세(Marie-Jose)의 이야기</span>
+										<p>“시내에 갔다가 집에 오는 길에 갑자기 총성이 들렸습니다. 집까지 갈 수조차 없었고, 집 뿐만 아니라 가지고 있던 모든 게 전부 불에 타버렸어요. 저를 포함해서 마을 사람들이 전부 피난했습니다. 자녀들과 함께 파크셀티크(Parc Celtique)에서 생활하고 있는데 이곳 상황은 참담합니다. 수중에 아무것도 없어요. 음식, 화장실, 잘 곳이 가장 급합니다.” <em>마리 조세(Marie-Jose) / 피난민 여성</em>
+										</p>
+									</div>
+									<div class="cont_elm">
+										<span>성 ∙ 젠더기반 폭력 진료소 운영</span>
+										<p>아이티 전역에는 성 ∙ 젠더기반 폭력 또한 횡행하고 있습니다. 성 ∙ 젠더기반 폭력 생존자는 대부분 여성과 소녀인데, 통계에 따르면 15~49세 아이티 여성 8명 중 1명이 성∙젠더기반 폭력을 겪었습니다. 국경없는의사회는 24시간 무상으로 제공되는 유선 상담 서비스뿐만 아니라 포르토프랭스(Port-au-Prince)와 고나이브(Gonaives) 지역에서 두 개의 성 ∙ 젠더기반 폭력 진료소를 운영하고 있습니다. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--indicator-->
+					<!-- prev / next -->
+					<div class="indi_hidden">
+						<div class="swiper-pagination country_indi"> </div>
+						<img src="./images/main/sec1_img_01.jpg" alt="">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</article>
+			<article id="principles" class="dataHash">
+				<div class="title_box">
+					<div class="underline">
+						<strong>국경없는의사회는 모든 활동에 있어</strong>
+					</div>
+					<h3>우리의 원칙을 지켜왔습니다</h3>
+				</div>
+				<ul class="rule_box">
+					<li>
+						<h5>독립성</h5>
+						<p> 운영비 97%는<br> 민간기부금으로 마련되어<br> 특정 집단 이익과 관계없이<br> 활동할 수 있습니다. </p>
+					</li>
+					<li>
+						<h5>중립성</h5>
+						<p> 어느 한편에 서지않고,<br> 인종, 종교, 정치적 성향에<br> 관계없이 오직 의료적<br> 필요에 따라 활동합니다. </p>
+					</li>
+					<li>
+						<h5>책무성</h5>
+						<p> 의무의 책임을 다하고자<br> 모금활동, 행정 운영 비용을<br> 사용된 후원금 80% 이상 <br> 구호활동에 활용됩니다. </p>
+					</li>
+					<li>
+						<h5>의료윤리</h5>
+						<p> 의료 윤리 규범을 준수하며,<br> 특히 의료활동 중 개인이나<br> 집단에 해를 가하지 않을<br> 의무를 다하고 있습니다. </p>
+					</li>
+				</ul>
+			</article>
+			<article id="effect" class="dataHash">
+				<div class="title_box">
+					<div class="underline">
+						<strong>국경없는의사회 후원효과</strong>
+					</div>
+					<h3>생명을 살리는 일에는<br>국경이 없습니다</h3>
+				</div>
+				<ul>
+					<li>
+						<div class="underline">
+							<strong>활동국가</strong>
+						</div>
+						<div class="counter_box">
+							<em class="counter1">88</em> <strong>개국</strong>
+						</div>
+						<p>세계 곳곳, 가장 긴박한 위험에<br>처한 지역에서 활동합니다.</p>
+					</li>
+					<li>
+						<div class="underline">
+							<strong>구호활동가 수</strong>
+						</div>
+						<div class="counter_box">
+							<em class="counter2">41,172</em> <strong>명</strong>
+						</div>
+						<p>구호 현장으로 구호활동가를 파견하고<br>직접 환자들을 치료합니다.</p>
+					</li>
+					<li>
+						<div class="underline">
+							<strong>외래환자 진료</strong>
+						</div>
+						<div class="counter_box">
+							<em class="counter3">9,904,200</em> <strong>회</strong>
+						</div>
+						<p>1년간 후원자들과 함께<br>수많은 환자들의 삶에 변화를 만들었습니다.</p>
+					</li>
+					<p class="figure">
+						<em>2020</em>년 전체 기준
+					</p>
+				</ul>
+			</article>
+			<article id="story1" class="dataHash">
+				<div class="title_box">
+					<div class="underline">
+						<strong>우리의 수 많은 의료 활동은</strong>
+					</div>
+					<h3>전 세계 630만 명의 후원자가<br>있었기에 가능했습니다</h3>
+				</div>
+				<div class="swiper-container activist_swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide list_1">
+							<div class="txt_box">
+								<div class="underline">
+									<strong>정형외과의 이재헌</strong>
+								</div>
+								<p>수술한 환자가 쩔룩쩔룩 걸어오면서<br>저한테 고맙다고 인사할 때는<br>정말 감동이었죠</p>
+							</div>
+						</div>
+						<div class="swiper-slide list_2">
+							<div class="txt_box">
+								<div class="underline">
+									<strong>간호사 박지혜</strong>
+								</div>
+								<p>악조건 속에서도 무사히 회복한<br>고마운 아이들이 기억나면서,<br>제가 간호사인 것이 행복했습니다</p>
+							</div>
+						</div>
+						<div class="swiper-slide list_3">
+							<div class="txt_box">
+								<div class="underline">
+									<strong>산부인과의 정의</strong>
+								</div>
+								<p>환자가 살아서 돌아갈 때마다<br>‘내가 여기 오길 정말 잘했구나’<br>하고 보람을 느낍니다</p>
+							</div>
+						</div>
+						<div class="swiper-slide list_4">
+							<div class="txt_box">
+								<div class="underline">
+									<strong>마취과의 이효민</strong>
+								</div>
+								<p>‘그 때 선생님이 살린 아기입니다,<br>이제 건강해져서 오늘 퇴원합니다’<br>라고 말하는데 정말 기쁘더군요</p>
+							</div>
 						</div>
 					</div>
 					<!--indicator-->
 					<div class="swiper-pagination"></div>
 				</div>
-			</div>
-		</article>
+			</article>
+			<article id="story2" class="dataHash">
+				<div class="bg_box"></div>
+				<div class="txt_box">
+					<div class="underline">
+						<strong>오늘, 당신의 마음을</strong><br>
+					</div>
+					<br>
+					<div class="underline">
+						<strong>나누어 주세요</strong><br>
+					</div>
+					<p> 국경없는의사회는 오늘도 후원자 여러분의 지원으로 <br> 분쟁지역에서 긴급히 치료가 필요한 환자들에게 <br> 신속한 의료지원을 제공할 수 있습니다. 환자들의 삶에 <br> 소중한 변화를 일으키는 데 힘이 되도록 함께해주세요. </p>
+					<p> 후원해 주신 금액은 전 세계 80여 개국의 도움이 필요한 <br> 환자들과 긴급구호 활동을 위해 사용됩니다. </p>
+					<div class="donate_btn">
+						<a href="https://donate.msf.or.kr/msfk/pay/step1_direct?dontype=P564002&period=pledge&price=20000&background=b023" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
+					</div>
+				</div>
+			</article>
+			<article id="campaign" class="dataHash">
+				<div class="txt_box">
+					<div class="underline">
+						<strong>후원 캠페인</strong>
+					</div>
+					<h3>국경없는의사회의 활동을<br>움직이는 것은 바로 여러분입니다</h3>
+				</div>
+				<div class="campaigns_swiper_bg">
+					<div class="swiper-container campaigns_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/cyclone_2022/" target="_blank" title="사이클론 긴급구호">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img19.jpg" alt="사이클론 긴급구호">
+										</div>
+									</div>
+									<h4>사이클론 긴급구호</h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/weruntoday_yongjoon/" target="_blank" title="WE RUN TODAY – 최용준 활동가">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img18.jpg" alt="WE RUN TODAY – 최용준 활동가">
+										</div>
+									</div>
+									<h4>WE RUN TODAY –<br>최용준 활동가</h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/philippines_typhoon_2022/" target="_blank" title="필리핀 : 태풍 라이 긴급구호">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img17.jpg" alt="필리핀 : 태풍 라이 긴급구호">
+										</div>
+									</div>
+									<h4>필리핀 : 태풍 라이 긴급구호</h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/weruntoday_jimin/" target="_blank" title="WE RUN TODAY – 김지민 활동가">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img16.jpg" alt="WE RUN TODAY ">
+										</div>
+									</div>
+									<h4>WE RUN TODAY –<br>김지민 활동가</h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/watsan_jihun/" target="_blank" title="구호현장에서 들려주는 식수위생 프로젝트 ">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img15.jpg" alt="구호현장에서 들려주는 식수위생 프로젝트 ">
+										</div>
+									</div>
+									<h4>구호현장에서 들려주는 식수위생 프로젝트 </h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/heritage_3/" target="_blank" title="더 많은 환자를 살리기 위한 우리의 여정 ">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img14.jpg" alt="더 많은 환자를 살리기 위한 우리의 여정 ">
+										</div>
+									</div>
+									<h4>더 많은 환자를 살리기 위한 우리의 여정 </h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/afghanistan_2021/" target="_blank" title="아프가니스탄 의료지원 ">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img13.jpg" alt="아프가니스탄 의료지원 ">
+										</div>
+									</div>
+									<h4>아프가니스탄 의료지원 </h4>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://msf.or.kr/campaigns/50th/" target="_blank" title="국경없는의사회가 달려온 50년 ">
+									<div class="img_box">
+										<div class="img">
+											<img src="./../images/main/campaigns_img12.jpg" alt="국경없는의사회가 달려온 50년 ">
+										</div>
+									</div>
+									<h4>국경없는의사회가 달려온 50년 </h4>
+								</a>
+							</div>
+						</div>
+						<!--indicator-->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- footer -->
+		<footer id="footer" class="footer">
+			<p class="address">06158 서울시 강남구 테헤란로 443 애플트리타워 9층</p>
+			<span><strong>대표자</strong> 드쿠론랄프아하누</span>
+			<span><strong>고유번호</strong> 101-82-21115</span><br>
+			<span><strong>후원문의</strong> <a href="tel:02-3703-3555">02-3703-3555</a></span>
+			<span><strong>문자기부 </strong> #1971 (3,000원)</span>
+		</footer>
+		<!-- //footer -->
 	</div>
-	<!-- footer -->
-	<footer id="footer" class="footer">
-		<p class="address">06158 서울시 강남구 테헤란로 443 애플트리타워 9층</p>
-		<span><strong>대표자</strong> 드쿠론랄프아하누</span>
-		<span><strong>고유번호</strong> 101-82-21115</span><br>
-		<span><strong>후원문의</strong> <a href="tel:02-3703-3555">02-3703-3555</a></span>
-		<span><strong>문자기부 </strong> #1971 (3,000원)</span>
-	</footer>
-	<!-- //footer -->
-</div>
-</div>
-<script src="javascripts/plugin.js"></script>
-<script src="javascripts/design_common.js"></script>
+	</div>
+	<script src="javascripts/plugin.js"></script>
+	<script src="javascripts/design_common.js"></script>
 </body>
 </html>

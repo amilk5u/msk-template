@@ -297,6 +297,67 @@ header > div.donate_btn { float: right; }
 
 #wrap #warehouse .item_swiper .swiper-slide a .item_info > div span { font-weight: 700; color: #f70707; letter-spacing: 0; }
 
+
+
+
+
+
+
+
+
+
+
+/* 추가섹션 */
+#wrap #addSection {  width:100%; }
+/* 컬러 변경... */
+#wrap #addSection .country_slide.yemen {}
+#wrap #addSection .country_slide.burkina_faso .txt_wrap {}
+#wrap #addSection .country_slide.ukraine {}
+#wrap #addSection .country_slide.haiti {}
+#wrap #addSection .img_wrap .loling_img > img:first-of-type {  width:100%; position: static; } 
+#wrap #addSection .img_wrap .loling_img > img {  width:100%; position: absolute; left:0; top:0; } 
+#wrap #addSection .img_wrap .title_txt {  width:100%; margin:40px auto 0;  position: absolute; top:10px;   text-align: center;  } 
+#wrap #addSection .img_wrap .title_txt > div {  width:fit-content;  margin:0 auto;  padding:20px 0 0;}
+#wrap #addSection .img_wrap .title_txt > div img {  width:35px; height:35px; border-radius: 5px; margin:0 5px 0 0; }
+#wrap #addSection .img_wrap .title_txt p { color: #656970; font-weight: 400; font-size: 12px; }
+#wrap #addSection .img_wrap .title_txt strong  { font-size: 34px; color: #212326; font-weight: 600; }
+#wrap #addSection .img_wrap .title_txt span  { padding: 12px 0 0; color: #212326; font-size: 13px; font-weight: 400; opacity: .5; display: block; }
+#wrap #addSection .txt_wrap { height:500px; overflow: hidden; /* height:270px; */ box-sizing: border-box; padding:70px 20px 100px; background-color: #f0f2f6;}
+#wrap #addSection .txt_wrap .cont_elm { padding:25px 0 0; }
+#wrap #addSection .txt_wrap .cont_elm:first-of-type { padding:0; }
+#wrap #addSection .txt_wrap .cont_elm span {  padding:0 0 0 7px; color:#ec4c4c;  font-size: 15px;  font-weight: 500;  position: relative; transform: skew(-7deg);  display: block; letter-spacing: -.5px;}
+#wrap #addSection .txt_wrap .cont_elm span::before  { content: ""; display: block; width: 2px; height: 80%; background-color: #ed3c3c; position: absolute; left: 0; top: 50%; transform: translate(0,-50%) skew(-5deg); }
+#wrap #addSection .txt_wrap .cont_elm p { padding: 10px 0 0; font-size: 13px; color: #656970; font-weight: 400; line-height: 20px; }
+#wrap #addSection .txt_wrap .cont_elm em { padding: 5px 0 0; color: #36393e; font-size: 12px; display: block; }
+#wrap #addSection .swiper-pagination.country_indi  { width: 85%; background-color: #f0f2f6; margin: 0 auto; left: 50%; padding: 20px 0; transform: translate(-50%,0); border-radius: 100px; bottom: -39px; z-index: 5; }
+#wrap #addSection .swiper-pagination-bullets .swiper-pagination-bullet { width:7vw; height:7vw;  background-color: blue;  opacity: .3;  border-radius: 2px;  margin:0 10px;}
+#wrap #addSection .swiper-pagination-bullets .swiper-pagination-bullet-active { opacity: 1; box-shadow: 0 3px 10px #979797; }
+#wrap #addSection .swiper-pagination-bullets .swiper-pagination-bullet:nth-of-type(1) { background:url(./../../images/main/flag_btn01.jpg); background-size: cover; }
+#wrap #addSection .swiper-pagination-bullets .swiper-pagination-bullet:nth-of-type(2) { background:url(./../../images/main/flag_btn02.jpg); background-size: cover; }
+#wrap #addSection .swiper-pagination-bullet:nth-of-type(3) { background:url(./../../images/main/flag_btn03.jpg); background-size: cover; }
+#wrap #addSection .swiper-pagination-bullet:nth-of-type(4) { background:url(./../../images/main/flag_btn04.jpg); background-size: cover; }
+.indi_hidden {  position: absolute; top:0; left:0; z-index: 1; }
+.indi_hidden img { width:100%; opacity: 0; } 
+
+#wrap #addSection .swiper-button-prev, #wrap #addSection .swiper-button-next {  background-color: red;  width:12px;  height:22px;  top:auto;  bottom:-10px;}
+#wrap #addSection .swiper-button-prev {  background: url(./../../images/main/slide_btn_icon.png);  background-size: cover;  transform:rotate(180deg);  left:70px;}
+#wrap #addSection .swiper-button-next {  background: url(./../../images/main/slide_btn_icon.png);  background-size: cover;  right:70px;}
+#wrap #addSection .swiper-button-prev:after, #wrap #addSection .swiper-button-next:after {  display: none;}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #wrap #principles { margin: 0 0 30px; background: url(../../images/main/principle_bg.jpg) 0 82px no-repeat; background-size: 100% auto; }
 
 #wrap #principles .title_box { text-align: center; padding: 0 0 291px; }

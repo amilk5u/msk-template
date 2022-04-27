@@ -941,7 +941,7 @@ header .top_btn span:after { width:2px; height:15px; top:22px; left:37px; backgr
 /* 섹션 추가 */
 #fullpage .section#addSection { width: 100%; height: 100vh; padding:120px 0 0; box-sizing: border-box; }
 #fullpage .section#addSection.fp-table { display: block; }
-#fullpage .section#addSection .sub_cont { width: 100%; position: relative; box-sizing: border-box; overflow: hidden; border:4px solid black; }
+#fullpage .section#addSection .sub_cont { width: 100%; position: relative; box-sizing: border-box; overflow: hidden; /* border:4px solid black; */ }
 #fullpage .section#addSection .txt_wrap { position: relative; padding:0 40px; z-index: 1; top:70px; width:1360px; margin:0 auto; }
 #fullpage .section#addSection .txt_wrap .desc {	width:fit-content; position: fixed; display:none; height:700px; opacity: 0; }
 #fullpage .section#addSection .txt_wrap .desc:first-of-type { display: block; opacity: 1; }
